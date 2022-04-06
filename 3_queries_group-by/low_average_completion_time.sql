@@ -7,3 +7,6 @@ GROUP BY students.name
 HAVING avg(assignment_submissions.duration) < avg(assignments.duration)
 ORDER BY avg(assignment_submissions.duration) 
 DESC;
+
+
+SELECT name FROM world WHERE continent = 'Europe' AND gdp > (SELECT gdp FROM WORLD WHERE name = 'United Kingdom');
